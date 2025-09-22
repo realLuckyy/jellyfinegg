@@ -1,0 +1,47 @@
+{
+    "meta": {
+        "version": "PTDL_v2"
+    },
+    "name": "JellyfinEgg",
+    "author": "trudge.onyx2223@eagereverest.com",
+    "description": "Professional Jellyfin Media Server deployment for Pterodactyl Panel. Developed by Luckyy - Ready-to-use media server with automatic configuration and seamless setup.",
+    "docker_images": {
+        "0xluckyy/jellyfin-pterodactyl:working": "0xluckyy/jellyfin-pterodactyl:working"
+    },
+    "startup": "/init.sh",
+    "config": {
+        "files": "{}",
+        "startup": "{\"done\": \"startup complete\"}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "mkdir -p /mnt/server",
+            "container": "alpine:latest",
+            "entrypoint": "ash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Server Name",
+            "description": "Custom name for your Jellyfin server (optional)",
+            "env_variable": "JELLYFIN_SERVER_NAME",
+            "default_value": "JellyfinEgg Media Server",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:50",
+            "field_type": "text"
+        },
+        {
+            "name": "Admin Username",
+            "description": "Username for the initial admin account (leave empty to set during setup wizard)",
+            "env_variable": "JELLYFIN_ADMIN_USER",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string|max:30",
+            "field_type": "text"
+        }
+    ]
+}
