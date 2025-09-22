@@ -32,10 +32,10 @@ A ready-to-deploy Pterodactyl egg that allows game server hosting providers and 
 1. **Import the Egg**
    ```bash
    # Download the egg file
-   wget https://raw.githubusercontent.com/your-repo/jellyfinegg/main/egg-jellyfin.json
+   wget https://raw.githubusercontent.com/realLuckyy/jellyfinegg/main/jellyfinegg.json
    
    # Import via Pterodactyl admin panel:
-   # Admin → Nests → Import Egg → Select egg-jellyfin.json
+   # Admin → Nests → Import Egg → Select jellyfinegg.json
    ```
 
 2. **Create a New Server**
