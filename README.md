@@ -294,7 +294,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ### Development Setup
 ```bash
-git clone https://github.com/your-repo/jellyfinegg.git
+git clone https://github.com/realLuckyy/jellyfinegg.git
 cd jellyfinegg
 
 # Test the egg configuration
@@ -306,7 +306,7 @@ docker run -p 8096:8096 jellyfin-pterodactyl
 
 - **Documentation**: [Jellyfin Documentation](https://jellyfin.org/docs/)
 - **Community**: [Jellyfin Forum](https://forum.jellyfin.org/)
-- **Issues**: [GitHub Issues](https://github.com/your-repo/jellyfinegg/issues)
+- **Issues**: [GitHub Issues](https://github.com/realLuckyy/jellyfinegg/issues)
 - **Discord**: [Pterodactyl Discord](https://discord.gg/pterodactyl)
 
 ## License
